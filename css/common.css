@@ -1,0 +1,102 @@
+/*초기화*/
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,th,td{margin: 0; padding: 0;}
+body{background-color: #dff0f2; font-family: 'S-CoreDream-3Light'; font-size: 16px; color: #707070; line-height: 1.875;}
+ul{list-style: none;}
+em{font-style: normal;}
+img{vertical-align: middle;}
+table{border-spacing: 0;}
+a{text-decoration: none; color: #707070;}
+
+/*공통*/
+.inner{width: 980px; margin: 0 auto; padding: 10px 0 0 0;}
+.in{width: 980px; margin: 0 auto; padding: 10px 0 0 0;}
+.in .gnb{float: right;}
+.in::after{display: block; content: ""; clear: both;}
+
+/*개별*/
+#header{background-color: #61c5e1; position: relative;}
+#header .in{width: 980px; margin: 0 auto; padding: 10px 0 0 0;}
+#header .in .logo{width: 58px; height: auto; position: absolute; left: 500px; top: 2px;}
+#header .in .gnb{float: right;}
+#header .in::after{display: block; content: ""; clear: both;}
+
+#header .inner::after{display: block; content: ""; clear: both;}
+
+.gnb .menu li{float: left;}
+.gnb .menu li a{font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; color: #FFFFFF;
+                display:block; line-height: 60px; margin: 0 38px;}
+.gnb .menu li a:nth-child(1){margin-left: 0;}
+
+.mainContainer .mainVisual img{width: 100%;}
+
+.mainContainer .profileWrap .in{padding-top: 150px;}
+.mainContainer .profileWrap .logo2{display: block; text-align: center;}
+
+.mainContainer .title
+{margin-top: 100px; font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: #61c5e1; text-align: center;
+                                    border-bottom: 3px solid #62c5e2; line-height: 1; padding-top: 19px; padding-bottom: 19px;}
+
+.mainContainer .profileWrap .list {width: 840px; margin: 0 auto;}
+.mainContainer .profileWrap .list::after{display: block; content: ""; clear: both;}
+.mainContainer .profileWrap .list li{width: 200px; margin-top: 80px; margin-left: 120px; margin-bottom: 60px; float: left;}
+.mainContainer .profileWrap .list li:nth-child(1){margin-left: 0;}
+.mainContainer .profileWrap .list li:nth-child(4){margin-top: 0; margin-left: 0; margin-bottom: 0;}
+.mainContainer .profileWrap .list li:nth-child(5){margin-top: 0; margin-bottom: 0;}
+.mainContainer .profileWrap .list li:nth-child(6){margin-top: 0; margin-bottom: 0;}
+.mainContainer .profileWrap .list li .desc .name{padding-bottom: 3px; margin-top: 23px; font-weight: 700; color: #242424; border-bottom: 3px solid #62c5e2; overflow: hidden;}
+.mainContainer .profileWrap .list li .desc .name::after{display: block; content: ""; clear: both;}
+.mainContainer .profileWrap .list li .desc .name a{float: right; margin-top: -2px;} /*float 해서 a를 블록으로 바꾸고 마진을 줄 필요가 없다. 블록으로 자동으로 바뀜.*/
+.mainContainer .profileWrap .list li .desc .info{line-height: 1.5; margin-top: 21px;}
+.mainContainer .profileWrap .list li .desc .info p em{font-weight: 700;}
+
+.mainContainer .albumWrap .title{margin-bottom: 80px;}
+.mainContainer .albumWrap .albumHeader,
+.mainContainer .albumWrap .albumContent{width: 840px; margin: 0 auto; margin-top: 80px;}
+.mainContainer .albumWrap .albumHeader .thumb{float: left;}
+.mainContainer .albumWrap .albumHeader .trackList{float: left; margin-left: 86px; width: 320px;}
+.mainContainer .albumWrap .albumHeader .trackList .tit{margin-bottom: 23px; border-bottom: 1px solid #62c5e2; padding-bottom: 9px; color: #62c5e2; font-weight: 700;}
+.mainContainer .albumWrap .albumHeader .trackList .list{font-size: 14px; font-weight: 500; line-height: 2.143;}
+.mainContainer .albumWrap .albumHeader .albumDesc{clear: both; margin-left: 70px; width: 840px; margin: 0 auto;}
+.mainContainer .albumWrap .albumHeader .albumDesc p{font-size: 18px; font-weight: 600; line-height: 1.67; color: #62c5e2;}
+
+
+.mainContainer .scheduleWrap .tableWrap{margin-top: 80px;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl{width: 100%; background-color: #ffffff;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl thead tr:nth-child(1){background-color: #78cde4; height: 60px; font-weight: 800; color: #ffffff;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl thead tr:nth-child(1) th{height: 60px;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl thead tr:nth-child(2) th{height: 40px; border-bottom: 3px solid #78cde4;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl thead tr:nth-child(2) th:nth-child(1) .red{color: #ff2525;}
+.mainContainer .scheduleWrap .tableWrap .scheduleTbl tbody tr td{border-bottom: 1px solid #8c8c8c; height: 90px; vertical-align: top; text-align: left;
+                                                                    line-height: 1; padding: 22px 0 0 25px;}
+.mainContainer .scheduleWrap .iconWrap{font-size: 0; text-align: right; margin-top: 34px;}
+.mainContainer .scheduleWrap .iconWrap span{display: inline-block; font-size: 14px; margin-left: 20px;}
+
+.mainContainer .noticeWrap .tableWrap .noticeTbl{background-color: #FFFFFF; width: 100%;}
+.mainContainer .noticeWrap .tableWrap .noticeTbl thead tr th{border-top: 1px solid #8c8c8c; border-bottom: 1px solid #8c8c8c; height: 50px;}
+.mainContainer .noticeWrap .tableWrap .noticeTbl tbody tr td{border-bottom: 1px solid #8c8c8c; height: 50px; text-align: center;}
+.mainContainer .noticeWrap .tableWrap .noticeTbl tbody tr td:nth-child(2){text-align: left;}
+.mainContainer .noticeWrap .tableWrap .noticeTbl tbody tr:nth-child(1) td:nth-child(1){text-align: left;}
+.mainContainer .noticeWrap .pagination{text-align: center; padding-top: 40px; padding-bottom: 150px;}
+.mainContainer .noticeWrap .pagination a{display: inline-block; margin-left: 10px; width: 30px; height: 30px; border-radius: 15px; line-height: 30px; text-align: center;}
+.mainContainer .noticeWrap .pagination a:nth-child(1){margin-left: 0;}
+
+footer{text-align: center; background: url(../images/footerbcc.png) no-repeat center center; background-size: cover; padding: 50px 0 50px 0;}
+footer .in{padding: 0;}
+footer .sns{display: inline-block;}
+footer .sns li{float: left;  margin-left: 30px;}
+footer .sns li:nth-child(1){margin-left: 0px;}
+footer .sns li a{display: block; text-indent: -9999px; width: 46px; height: 46px;}
+footer .sns .f{background: url(../images/icon_facebook.png) no-repeat 0 0;}
+footer .sns .t{background: url(../images/icon_tweet.png) no-repeat 0 0;}
+footer .sns .d{background: url(../images/icon_daum.png) no-repeat 0 0;}
+footer .sns .i{background: url(../images/icon_insta.png) no-repeat 0 0;}
+footer .sns .c{background: url(../images/icon_company.png) no-repeat 0 0;}
+footer .in .copy{color: #FFFFFF; font-size: 14px; margin-top: 30px; margin-bottom: 30px;}
